@@ -110,7 +110,7 @@ class StudentController extends Controller
         }
 
         //return response
-        return new StudentResource(true, 'Data Post Berhasil Diubah!', $student);
+        return new StudentResource(true, 'Student data successfully updated!', $student);
     }
 
 
@@ -123,6 +123,6 @@ class StudentController extends Controller
         $student->delete();
 
         //return response
-        return new StudentResource(true, 'Data Post Berhasil Dihapus!', null);
+        return new StudentResource(true, 'Student data has been successfully deleted!', null);
     }
 }
