@@ -16,7 +16,7 @@ class StudentController extends Controller
     public function index()
     {
         //get posts
-        $students = Student::latest()->paginate(5);
+        $students = Student::all();
         //return collection of posts as a resource
         return new StudentResource(true, 'List of student data', $students);
     }
